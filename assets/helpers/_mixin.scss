@@ -1,0 +1,6 @@
+@mixin font($all, $red, $rose, $white){
+    font-family: $all;
+    font-size: $red;
+    font-weight: $rose;
+    color: $white;
+}
