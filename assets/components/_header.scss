@@ -1,31 +1,30 @@
-header{
-    background: #E5E5E5
-    header__content{
-
+.header{
+    &__content{
+        display: flex;
+        align-items: center;
     }
-    header__list{
-
+    &__suptitle{
+        @include font('Poppins', 400, 12px, $white);
     }
-    header__item{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height */
-        
-        
-        color: #FFFFFF;
+    &__img{
+        margin-right: 113px;
+        margin-left: 312px;
     }
-    header__link{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 18px;
-        /* identical to box height */
-        
-        
-        color: #FFFFFF;
+    &__list{
+        display: flex;
+    }
+    &__item{
+        margin-right: 46px;
+        display: flex;
+    }
+    &__link{
+        @include font('Poppins', 400, 12px, $white);
+    }
+    &__link:hover{
+        color: #E2B024;
+    }
+    &__icon{
+        margin-left: 36px;
+        display: flex;
     }
 }

@@ -1,6 +1,6 @@
-@mixin font($all, $red, $rose, $white){
-    font-family: $all;
-    font-size: $red;
-    font-weight: $rose;
-    color: $white;
+@mixin font($dry, $red, $rose, $sweet, $grape) {
+    font-family: $dry;
+    font-weight: $red;
+    font-size: $rose;
+    color: $grape;
 }

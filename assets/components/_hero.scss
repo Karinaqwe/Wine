@@ -1,0 +1,18 @@
+.hero{
+    margin-top: 13px;
+    &__content{
+        display: flex;
+    }
+    &__nav{
+        display: flex;
+    }
+    &__item{
+        padding-left: 80px;
+    }
+    &__link{
+        @include font('ChocolateBox', 400, 16px, $white);
+    }
+    &__link:hover{
+        color: #E2B024;
+    }
+}
