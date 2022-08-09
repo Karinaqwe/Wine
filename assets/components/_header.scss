@@ -19,6 +19,7 @@
     }
     &__link{
         @include font('Poppins', 400, 12px, $white);
+        transition: 0.5s;
     }
     &__link:hover{
         color: #E2B024;
@@ -26,5 +27,60 @@
     &__icon{
         margin-left: 36px;
         display: flex;
+    }
+}
+
+.burger {
+    display: none;
+    &__line {
+        width: 30px;
+        height: 5px;
+        background: #000;
+        margin: 3px 0;
+    }
+    &__menu {
+        position: absolute;
+        right: 40px;
+    }
+    &__list {
+        padding: 40px 0;
+        width: 50vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        background: #000;
+        display: none;
+    }
+    &__close {
+        display: none;
+    }
+    &.active &__close {
+        font-size: 25px;
+        font-weight: 900;
+        display: block;
+    }
+    &.active &__list {
+        display: flex;
+    }
+    &.active &__line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .header {
+        &__label {
+            display: none;
+        }
+        &__list {
+            display: none;
+        }
+       
+    }
+
+    .burger {
+        display: block;
     }
 }

@@ -1,0 +1,33 @@
+.contact{
+    margin-top: 150px;
+    &__title{
+        @include font('ChocolateBox', 400, 48px, $white);
+    }
+    &__text{
+        @include font('ChocolateBox', 400, 48px, $gold);
+    }
+    &__description{
+        @include font('Poppins', 300, 18px, $white);
+    }
+    &__list{
+        margin-top: 77px;
+    }
+    &__item{
+        margin-bottom: 42px;
+    }
+    &__link{
+        @include font('Poppins', 300, 18px, $white);
+        transition: 0.5s;
+    }
+    &__link:hover{
+        color: #E2B024;
+        text-decoration: underline;
+    }
+    &__icon{
+        margin-right: 27px;
+    }
+    &__img{
+        margin-top: 66px;
+        margin-left: 56px;
+    }
+}

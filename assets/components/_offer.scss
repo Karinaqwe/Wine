@@ -1,0 +1,62 @@
+.offer{
+    margin-top: 163px;
+    text-align: center;
+    &__title{
+        @include font('ChocolateBox', 400, 48px, $white);
+        margin-bottom: 97px;
+    }
+    &__text{
+        @include font('ChocolateBox', 400, 48px, $gold);
+        margin-bottom: 97px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__name{
+        @include font('ChocolateBox', 400, 24px, $white);
+    }
+    &__price{
+        @include font('Poppins', 400, 36px, $white);
+    }
+    &__artemis{
+        background: url(../assets/img/offer/artemis.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 370px;
+        height: 558px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__pope{
+        background: url(../assets/img/offer/pope-icon.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 370px;
+        height: 637px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    &__valley{
+        background: url(../assets/img/offer/valley-icon.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;  
+        width: 370px;
+        height: 558px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        left: -35%;
+    }
+}

@@ -1,0 +1,43 @@
+.merlot{
+    margin-top: 267px;
+    background: #18191A;
+    &__text{
+        @include font('Poppins', 400, 20px, $white);
+    }
+    &__title{
+        @include font('ChocolateBox', 400, 74px, $gold);
+        margin: 47px 0px 12px 0px;
+    }
+    &__suptitle{
+        @include font('Poppins', 400, 36px, $white);
+        margin: 52px 0px 64px 0px;
+        width: 526px;
+    }
+    &__description{
+        @include font('Poppins', 300, 18px, $white);
+    }
+    &__btn{
+        &--white{
+             @include font('Poppins', 500, 24px, $black);
+            background: #E2B024;
+            border: 1px solid #E2B024;
+            padding: 23px 48px 22px 47px;
+            transition: 0.5s;
+        }
+        &--black{
+            @include font('Poppins', 500, 24px, $white);
+            background: #18191A;
+            border: 1px solid #E2B024;
+            padding: 23px 52px 22px 52px;
+            margin: 64px 65px 0px 61px;
+        }
+    }
+    &__btn--white:hover{
+            color: #E2B024;
+            background: #1F1F1F;
+    }
+    &__btn--black:hover{
+            color: #E2B024;
+            background: #1F1F1F;
+}
+}

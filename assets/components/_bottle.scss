@@ -1,7 +1,9 @@
 .bottle{
     margin-top: 190px;
     &__content{
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__suptitle{
         @include font('ChocolateBox', 400, 24px, $white);
@@ -10,12 +12,20 @@
         @include font('ChocolateBox', 400, 96px, $white);
     }
     &__text{
-        @include font('ChocolateBox', 400, 96px, 18px, $gold);
+        @include font('ChocolateBox', 400, 96px, $gold);
     }
     &__description{
         @include font('Poppins', 300, 16px, $white);
+        width: 745px;
+        margin-top: 24px;
+        margin-bottom: 35px;
     }
     &__link{
         @include font('ChocolateBox', 400, 16px, $gold);
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    &__link:hover{
+        color: #fff;
     }
 }

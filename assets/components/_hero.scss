@@ -2,6 +2,7 @@
     margin-top: 13px;
     &__content{
         display: flex;
+        align-items: center;
     }
     &__nav{
         display: flex;
@@ -11,8 +12,16 @@
     }
     &__link{
         @include font('ChocolateBox', 400, 16px, $white);
+        transition: 0.5s;
     }
     &__link:hover{
         color: #E2B024;
+        text-decoration: underline;
+    }
+    &__line{
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        height: 0px;
+        width: 1170px;
+        margin: 22px 0px 22px 0px;
     }
 }

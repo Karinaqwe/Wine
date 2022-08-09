@@ -1,0 +1,31 @@
+.featured{
+    margin-top: 155px;
+    &__title{
+        @include font('ChocolateBox', 400, 48px, $white);
+    }
+    &__text{
+        @include font('ChocolateBox', 400, 48px, $gold);
+        margin-top: 58px;
+    }
+    &__box{
+        background: url(../assets/img/featured/box-icon.jpg);
+        width: 1170px;
+        height: 410px;
+    }
+    &__suptitle{
+        @include font('Poppins', 600, 24px, $white);
+    }
+    &__date{
+        @include font('Poppins', 400, 18px, $white);
+    }
+    &__description{
+        @include font('Poppins', 300, 18px, $white);
+    }
+    &__link{
+        @include font('ChocolateBox', 400, 18px, $gold);
+        text-decoration: underline;
+    }
+    &__link:hover{
+        color: #FFFFFF;
+    }
+}

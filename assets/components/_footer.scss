@@ -1,0 +1,42 @@
+.footer{
+    &__content{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__box{
+        margin-top: 133px;
+    }
+    &__title{
+        @include font('ChocolateBox', 400, 24px, $gold);
+        margin-bottom: 42px;
+        margin-right: 180px;
+    }
+    &__item{
+        margin-bottom: 15px;
+    }
+    &__link{
+        @include font('Poppins', 400, 16px, $white);
+        transition: 0.5s;
+    }
+    &__link:hover{
+        color: #E2B024;
+        text-decoration: underline;
+    }
+    &__img{
+        margin-right: 44px;
+        margin-bottom: 29px;
+        text-align: center;
+    }
+    &__copyright{
+        margin-top: 92px;
+    }
+    &__line{
+        border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+    &__description{
+        @include font('Poppins', 300, 16px, $white);
+        text-align: center;
+        margin-top: 22px;
+        margin-bottom: 42px;
+    }
+}

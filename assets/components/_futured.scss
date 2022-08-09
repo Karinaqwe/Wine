@@ -1,0 +1,69 @@
+.futured{
+    margin-top: 151px;
+    &__content{
+        text-align: center;
+    }
+    &__title{
+        @include font('ChocolateBox', 400, 48px, $gold);
+        margin-bottom: 89px;
+    }
+    &__text{
+        @include font('ChocolateBox', 400, 48px, $white);
+        margin-bottom: 89px;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
+    &__link{
+        @include font('Poppins', 400, 24px, $white);
+        margin-right: 72px;
+    }
+    &__line{
+        border: 1px solid #FFFFFF;
+        width: 417px;
+        height: 0px;
+    }
+    &__box{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    &__case{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 95px;
+        margin-right: 100px;
+    }
+    &__btn{
+        @include font('Poppins', 400, 14px, $black);
+        background: #E2B024;
+        padding: 10px 16px 9px 15px;
+        border: 1px solid #E2B024;
+    }
+    &__name{
+        @include font('ChocolateBox', 400, 24px, $white);
+    }
+    &__price{
+        &--old{
+            @include font('Poppins', 300, 16px, $gold);
+        }
+        &--new{
+            @include font('Poppins', 400, 24px, $gold);
+        }
+    }
+    &__info{
+        @include font('ChocolateBox', 400, 18px, $gold);
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+        margin-top: 81px;
+        margin-bottom: 167px;
+        transition: 0.5s;
+    }
+    &__info:hover{
+        color: #FFFFFF;
+    }
+}
