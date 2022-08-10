@@ -2,28 +2,35 @@
     margin-top: 155px;
     &__title{
         @include font('ChocolateBox', 400, 48px, $white);
+        text-align: center;
     }
     &__text{
         @include font('ChocolateBox', 400, 48px, $gold);
-        margin-top: 58px;
+        text-align: center;
     }
     &__box{
+        display: flex;
         background: url(../assets/img/featured/box-icon.jpg);
         width: 1170px;
         height: 410px;
+        margin-top: 58px;
     }
     &__suptitle{
         @include font('Poppins', 600, 24px, $white);
+        margin: 65px 0px 8px 30px;
     }
     &__date{
         @include font('Poppins', 400, 18px, $white);
+        margin-left: 30px;
     }
     &__description{
         @include font('Poppins', 300, 18px, $white);
+        margin: 44px 258px 45px 30px;
     }
     &__link{
         @include font('ChocolateBox', 400, 18px, $gold);
         text-decoration: underline;
+        margin: 0px 0px 89px 30px;
     }
     &__link:hover{
         color: #FFFFFF;

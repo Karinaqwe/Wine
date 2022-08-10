@@ -67,56 +67,6 @@ body {
   display: flex;
 }
 
-.burger {
-  display: none;
-}
-.burger__line {
-  width: 30px;
-  height: 5px;
-  background: #000;
-  margin: 3px 0;
-}
-.burger__menu {
-  position: absolute;
-  right: 40px;
-}
-.burger__list {
-  padding: 40px 0;
-  width: 50vw;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  background: #000;
-  display: none;
-}
-.burger__close {
-  display: none;
-}
-.burger.active .burger__close {
-  font-size: 25px;
-  font-weight: 900;
-  display: block;
-}
-.burger.active .burger__list {
-  display: flex;
-}
-.burger.active .burger__line {
-  display: none;
-}
-
-@media screen and (max-width: 684px) {
-  .header__label {
-    display: none;
-  }
-  .header__list {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-}
 .hero {
   margin-top: 13px;
 }
@@ -195,6 +145,7 @@ body {
   color: #fff;
 }
 
+@me;
 .merlot {
   margin-top: 267px;
   background: #18191A;
@@ -255,6 +206,23 @@ body {
   background: #1F1F1F;
 }
 
+.pol {
+  border: 10px solid #E2B024;
+  padding: 90px;
+  width: 374px;
+  height: 374px;
+}
+
+.merlot__img {
+  display: flex;
+  justify-content: center;
+  padding: 9px;
+  width: 374px;
+  height: 374px;
+  background: #E2B024;
+  border-radius: 50%;
+}
+
 .futured {
   margin-top: 151px;
 }
@@ -293,16 +261,15 @@ body {
 }
 .futured__box {
   display: flex;
+  justify-content: space-around;
   align-items: flex-end;
   margin-top: 100px;
-  margin-left: 100px;
 }
 .futured__case {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
   margin-top: 95px;
-  margin-right: 100px;
 }
 .futured__btn {
   font-family: "Poppins";
@@ -312,6 +279,10 @@ body {
   background: #E2B024;
   padding: 10px 16px 9px 15px;
   border: 1px solid #E2B024;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .futured__name {
   font-family: "ChocolateBox";
@@ -345,6 +316,14 @@ body {
 }
 .futured__info:hover {
   color: #FFFFFF;
+}
+.futured__item {
+  position: relative;
+  width: 205px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .client {
@@ -474,36 +453,42 @@ body {
   font-weight: 400;
   font-size: 48px;
   color: #FFFFFF;
+  text-align: center;
 }
 .featured__text {
   font-family: "ChocolateBox";
   font-weight: 400;
   font-size: 48px;
   color: #E2B024;
-  margin-top: 58px;
+  text-align: center;
 }
 .featured__box {
+  display: flex;
   background: url(../assets/img/featured/box-icon.jpg);
   width: 1170px;
   height: 410px;
+  margin-top: 58px;
 }
 .featured__suptitle {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 24px;
   color: #FFFFFF;
+  margin: 65px 0px 8px 30px;
 }
 .featured__date {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
+  margin-left: 30px;
 }
 .featured__description {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 18px;
   color: #FFFFFF;
+  margin: 44px 258px 45px 30px;
 }
 .featured__link {
   font-family: "ChocolateBox";
@@ -511,6 +496,7 @@ body {
   font-size: 18px;
   color: #E2B024;
   text-decoration: underline;
+  margin: 0px 0px 89px 30px;
 }
 .featured__link:hover {
   color: #FFFFFF;
@@ -518,6 +504,10 @@ body {
 
 .contact {
   margin-top: 150px;
+}
+.contact__content {
+  display: flex;
+  flex-wrap: wrap;
 }
 .contact__title {
   font-family: "ChocolateBox";
@@ -560,6 +550,29 @@ body {
 .contact__img {
   margin-top: 66px;
   margin-left: 56px;
+}
+.contact__name {
+  box-sizing: border-box;
+}
+.contact__name {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  width: 670px;
+  height: 64px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
 }
 
 .footer__content {
