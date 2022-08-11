@@ -1,27 +1,28 @@
 .merlot {
     margin-top: 267px;
     background: #18191A;
-
-    &__text {
+    &__content{
+        display: flex;
+        padding: 143px;
+    }
+    &__text{
         @include font('Poppins', 400, 20px, $white);
     }
-
-    &__title {
+    &__title{
         @include font('ChocolateBox', 400, 74px, $gold);
         margin: 47px 0px 12px 0px;
     }
-
-    &__suptitle {
+    &__suptitle{
         @include font('Poppins', 400, 36px, $white);
         margin: 52px 0px 64px 0px;
-        width: 526px;
+        max-width: 526px;
     }
-
-    &__description {
+    &__description{
         @include font('Poppins', 300, 18px, $white);
+        max-width: 526px;
+        margin-bottom: 64px;
     }
-
-    &__btn {
+    &__btn{
         &--white {
             @include font('Poppins', 500, 24px, $black);
             background: #E2B024;
@@ -29,41 +30,58 @@
             padding: 23px 48px 22px 47px;
             transition: 0.5s;
         }
-
         &--black {
             @include font('Poppins', 500, 24px, $white);
             background: #18191A;
             border: 1px solid #E2B024;
             padding: 23px 52px 22px 52px;
             margin: 64px 65px 0px 61px;
+            transition: 0.5s;
         }
     }
-
-    &__btn--white:hover {
+    &__btn--white:hover{
         color: #E2B024;
         background: #1F1F1F;
     }
-
-    &__btn--black:hover {
+    &__btn--black:hover{
         color: #E2B024;
         background: #1F1F1F;
     }
+    &__vector{
+
+        border: 10px solid #E2B024;
+        padding: 90px;
+        max-width: 374px;
+        height: 374px;
+        margin-left: 65px;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 9px;
+        max-width: 374px;
+        height: 374px;
+        background: #E2B024;
+        border-radius: 50%;
+        border: 65px;
+    }
+    &__icon{
+        width: 210px;
+        height: 690px;
+    }
 }
 
-.pol {
-    border: 10px solid #E2B024;
-    padding: 90px;
-    width: 374px;
-    height: 374px;
-
+@media screen and (max-width: 943px){
+    .merlot{
+        &__content{
+            display: flex;
+            flex-direction: column;
+        }
+        &__vector{
+            max-width: 100%;
+        }
+    }
 }
 
-.merlot__img {
-    display: flex;
-    justify-content: center;
-    padding: 9px;
-    width: 374px;
-    height: 374px;
-    background: #E2B024;
-    border-radius: 50%;
-}
+

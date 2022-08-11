@@ -21,13 +21,13 @@
     }
     &__line{
         border: 1px solid #FFFFFF;
-        width: 417px;
+        max-width: 417px;
         height: 0px;
     }
     &__box{
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: center;
         margin-top: 100px;
     }
     &__case{
@@ -41,10 +41,16 @@
         background: #E2B024;
         padding: 10px 16px 9px 15px;
         border: 1px solid #E2B024;
+        transition: 0.5s;
         display: flex;
         position: absolute;
         top: 0;
         left: 0;
+        right: 20;
+    }
+    &__btn:hover{
+        color: #E2B024;
+        background: #000;
     }
     &__name{
         @include font('ChocolateBox', 400, 24px, $white);
@@ -57,7 +63,7 @@
             @include font('Poppins', 400, 24px, $gold);
         }
     }
-    &__info{
+   &__info{
         @include font('ChocolateBox', 400, 18px, $gold);
         text-decoration: underline;
         display: flex;
@@ -76,5 +82,23 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media screen and (max-width:1031px) {
+    .futured{
+        &__content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__box{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__case{
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }

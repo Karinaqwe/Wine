@@ -2,16 +2,24 @@
     margin-top: 150px;
     &__content{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-around;
     }
     &__title{
         @include font('ChocolateBox', 400, 48px, $white);
+        margin-bottom: 101px;
+        display: flex;
+        justify-content: center;
     }
     &__text{
         @include font('ChocolateBox', 400, 48px, $gold);
     }
     &__description{
         @include font('Poppins', 300, 18px, $white);
+        max-width: 466px;
     }
     &__list{
         margin-top: 77px;
@@ -34,23 +42,48 @@
         margin-top: 66px;
         margin-left: 56px;
     }
-    &__name{
-        box-sizing: border-box;
+    &__input{
+        margin-left: 35px;
     }
     &__name{
         @include font('Poppins', 400, 24px, $white);
-        width: 670px;
+    }
+    &__email{
+        @include font('Poppins', 400, 24px, $white);
+        max-width: 670px;
         height: 64px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        background: #000;
+    }
+    &__message{
+        @include font('Poppins', 400, 24px, $white);
+        max-width: 670px;
+        height: 133px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        background: #000;
+        margin-bottom: 29px;
+    }
+    &__btn{
+        @include font('Poppins', 500, 35px, $black);
+        background: #E2B024;
+        padding: 10px 54px 10px 54px;
+        border: 1px solid #E2B024;
+        margin-bottom: 29px;
+    }
+    &__btn:hover{
+        color: #E2B024;
+        background: #000;
     }
 }
-.input {
-    background-color: #303245;
-    border-radius: 12px;
-    border: 0;
-    color: #eee;
-    font-size: 18px;
-    height: 100%;
-    outline: 0;
-    padding: 4px 20px 0;
-    width: 100%;
+
+@media screen and (max-width: 781px) {
+    .contact{
+        &__box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 }

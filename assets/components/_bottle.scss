@@ -16,7 +16,7 @@
     }
     &__description{
         @include font('Poppins', 300, 16px, $white);
-        width: 745px;
+        max-width: 745px;
         margin-top: 24px;
         margin-bottom: 35px;
     }
@@ -30,6 +30,17 @@
     }
 }
 
-@media screen and (max-width:){
-    
+@media screen and (max-width: 746px) {
+    .bottle{
+        &__content{
+            display: flex;
+            align-items: center;
+        }
+        &__description{
+            max-width: 100%;
+        }
+        &__icon{
+            max-width: 100%;
+        }
+    }
 }

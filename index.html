@@ -6,54 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
 
     <header class="header">
-        <div class="header__content">
-            <p class="header__suptitle">
-                We Ship Everywhere! Free In The Us!
-            </p>
-            <img src="./assets/img/header/logo.png" alt="" class="header__img">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#" class="header__link">
-                        Login
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">
-                        Register
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">
-                        Wish List (0)
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">
-                        <img src="./assets/img/header/search-icon.svg" alt="" class="header__icon">
-                    </a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link">
-                        <img src="./assets/img/header/bag.svg" alt="" class="header__icon">
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="header__content">
+                <p class="header__suptitle">
+                    We Ship Everywhere! Free In The Us!
+                </p>
+                <img src="./assets/img/header/logo.png" alt="" class="header__img">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Login
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Register
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            Wish List (0)
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            <img src="./assets/img/header/search-icon.svg" alt="" class="header__icon">
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">
+                            <img src="./assets/img/header/bag.svg" alt="" class="header__icon">
+                        </a>
+                    </li>
+                </ul>
 
 
-
+            </div>
         </div>
     </header>
 
     <section class="hero">
+        <div class="container">
         <hr class="hero__line">
         <div class="hero__content">
-            <ul class="hero__nav">
+            <ul class="hero__list">
                 <li class="hero__item">
                     <a href="#" class="hero__link">Home</a>
                 </li>
@@ -81,6 +84,7 @@
             </ul>
         </div>
         <hr class="hero__line">
+        </div>
     </section>
 
     <section class="bottle">
@@ -105,34 +109,33 @@
     <section class="merlot">
         <div class="container">
             <div class="merlot__content">
-                <p class="merlot__text">
-                    New Wines
-                </p>
-                <h2 class="merlot__title">
-                    Merlot
-                </h2>
-                <p class="merlot__suptitle">
-                    Winehouse Vineyard
-                </p>
-                <p class="merlot__description">
-                    Merlot is loved for its boisterous black cherry flavors, supple
-                    tannins, and chocolatey finish. On the high end, it's often
-                    mistaken with Cabernet Sauvignon.
-                </p>
-                <button class="merlot__btn--white">
-                    Learn more
-                </button>
-                <button class="merlot__btn--black">
-                    View more
-                </button>
-                <div class="pol">
+                <div class="merlot__case">
+                    <p class="merlot__text">
+                        New Wines
+                    </p>
+                    <h2 class="merlot__title">
+                        Merlot
+                    </h2>
+                    <p class="merlot__suptitle">
+                        Winehouse Vineyard
+                    </p>
+                    <p class="merlot__description">
+                        Merlot is loved for its boisterous black cherry flavors, supple
+                        tannins, and chocolatey finish. On the high end, it's often
+                        mistaken with Cabernet Sauvignon.
+                    </p>
+                    <button class="merlot__btn--white">
+                        Learn more
+                    </button>
+                    <button class="merlot__btn--black">
+                        View more
+                    </button>
+                </div>
+                <div class="merlot__vector">
                     <div class="merlot__img">
-
-                        <img src="./assets/img/merlot/MERLOT-IGT-TREVENEZIE-BOTTEGA 1.png" alt="Merlot">
-
+                        <img src="./assets/img/merlot/MERLOT-IGT-TREVENEZIE-BOTTEGA 1.png" alt="Merlot" class="merlot__icon">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -170,154 +173,228 @@
                 </ul>
                 <hr class="futured__line">
             </div>
-            <ul class="futured__box">
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        30% off
-                    </button>
-                    <img src="./assets/img/futured/silveroak-icon.png" alt="Silver Oak" class="futured__img">
-                    <p class="futured__name">
-                        Silver Oak
-                    </p>
-                    <strike class="futured__price--old">
-                        $500.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $450.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        45% off
-                    </button>
-                    <img src="./assets/img/futured/woodenhead-icon.png" alt="Woodenhead" class="futured__img">
-                    <p class="futured__name">
-                        2015 Woodenhead
-                    </p>
-                    <strike class="futured__price--old">
-                        $150.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $120.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        20% off
-                    </button>
-                    <img src="./assets/img/futured/redhills-icon.png" alt="Red Hills" class="futured__img">
-                    <p class="futured__name">
-                        2014 red hills
-                    </p>
-                    <strike class="futured__price--old">
-                        $1000.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $850.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        35% off
-                    </button>
-                    <img src="./assets/img/futured/mazzeiSiepi-icon.png" alt="" class="futured__img">
-                    <p class="futured__name">
-                        2012 Chardonnay
-                    </p>
-                    <strike class="futured__price--old">
-                        $500.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $450.00
-                    </p>
-                </li>
-            </ul>
-            <ul class="futured__case">
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        40% off
-                    </button>
-                    <img src="./assets/img/futured/cabernet-icon.png" alt="Cabernet" class="futured__img">
-                    <p class="futured__name">
-                        2008 Cabernet
-                    </p>
-                    <strike class="futured__price--old">
-                        $500.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $450.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        New
-                    </button>
-                    <img src="./assets/img/futured/mazzeiSiepi-icon.png" alt="Mazzei Siepi" class="futured__img">
-                    <p class="futured__name">
-                        Mazzei Siepi 2016
-                    </p>
-                    <strike class="futured__price--old">
-                        $300.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $280.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        30% off
-                    </button>
-                    <img src="./assets/img/futured/penfold-icon.png" alt="Penfolds uncorks" class="futured__img">
-                    <p class="futured__name">
-                        Penfolds uncorks
-                    </p>
-                    <strike class="futured__price--old">
-                        $400.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $360.00
-                    </p>
-                </li>
-                <li class="futured__item">
-                    <button class="futured__btn">
-                        New
-                    </button>
-                    <img src="./assets/img/futured/jacob-icon.png" alt="Jacob" class="futured__img">
-                    <p class="futured__name">
-                        2012 Jacob's
-                    </p>
-                    <strike class="futured__price--old">
-                        $1000.00
-                    </strike>
-                    <p class="futured__price--new">
-                        $950.00
-                    </p>
-                </li>
-            </ul>
-
+                <ul class="futured__box">
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            30% off
+                        </button>
+                        <img src="./assets/img/futured/silveroak-icon.png" alt="Silver Oak" class="futured__img">
+                        <p class="futured__name">
+                            Silver Oak
+                        </p>
+                        <strike class="futured__price--old">
+                            $500.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $450.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            45% off
+                        </button>
+                        <img src="./assets/img/futured/woodenhead-icon.png" alt="Woodenhead" class="futured__img">
+                        <p class="futured__name">
+                            2015 Woodenhead
+                        </p>
+                        <strike class="futured__price--old">
+                            $150.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $120.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            20% off
+                        </button>
+                        <img src="./assets/img/futured/redhills-icon.png" alt="Red Hills" class="futured__img">
+                        <p class="futured__name">
+                            2014 red hills
+                        </p>
+                        <strike class="futured__price--old">
+                            $1000.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $850.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            35% off
+                        </button>
+                        <img src="./assets/img/futured/mazzeiSiepi-icon.png" alt="" class="futured__img">
+                        <p class="futured__name">
+                            2012 Chardonnay
+                        </p>
+                        <strike class="futured__price--old">
+                            $500.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $450.00
+                        </p>
+                    </li>
+                </ul>
+                <ul class="futured__case">
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            40% off
+                        </button>
+                        <img src="./assets/img/futured/cabernet-icon.png" alt="Cabernet" class="futured__img">
+                        <p class="futured__name">
+                            2008 Cabernet
+                        </p>
+                        <strike class="futured__price--old">
+                            $500.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $450.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            New
+                        </button>
+                        <img src="./assets/img/futured/mazzeiSiepi-icon.png" alt="Mazzei Siepi" class="futured__img">
+                        <p class="futured__name">
+                            Mazzei Siepi 2016
+                        </p>
+                        <strike class="futured__price--old">
+                            $300.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $280.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            30% off
+                        </button>
+                        <img src="./assets/img/futured/penfold-icon.png" alt="Penfolds uncorks" class="futured__img">
+                        <p class="futured__name">
+                            Penfolds uncorks
+                        </p>
+                        <strike class="futured__price--old">
+                            $400.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $360.00
+                        </p>
+                    </li>
+                    <li class="futured__item">
+                        <button class="futured__btn">
+                            New
+                        </button>
+                        <img src="./assets/img/futured/jacob-icon.png" alt="Jacob" class="futured__img">
+                        <p class="futured__name">
+                            2012 Jacob's
+                        </p>
+                        <strike class="futured__price--old">
+                            $1000.00
+                        </strike>
+                        <p class="futured__price--new">
+                            $950.00
+                        </p>
+                    </li>
+                </ul>
+            <p class="futured__info">
+                View MORE
+            </p>
         </div>
     </section>
 
     <section class="client">
         <div class="container">
             <div class="client__content">
-                <h2 class="client__title">
-                    Client
-                    <a href="#" class="client__text">
-                        Review
-                    </a>
-                </h2>
-                <img src="./assets/img/client/david-icon.png" alt="" class="client__img">
-                <p class="client__name">
-                    David Luice
-                </p>
-                <p class="client__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat,
-                    lacinia sagittis.
-                    Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan
-                    lacus,
-                    non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
-                </p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client__box">
+                            <h2 class="client__title">
+                                Client
+                                <a href="#" class="client__text">
+                                    Review
+                                </a>
+                            </h2>
+                            <img src="./assets/img/client/david-icon.png" alt="" class="client__img">
+                            <p class="client__name">
+                                David Luice
+                            </p>
+                            <p class="client__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat,
+                                lacinia sagittis.
+                                Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan
+                                lacus,
+                                non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client__box">
+                            <h2 class="client__title">
+                                Client
+                                <a href="#" class="client__text">
+                                    Review
+                                </a>
+                            </h2>
+                            <img src="./assets/img/client/david-icon.png" alt="" class="client__img">
+                            <p class="client__name">
+                                David Luice
+                            </p>
+                            <p class="client__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat,
+                                lacinia sagittis.
+                                Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan
+                                lacus,
+                                non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client__box">
+                            <h2 class="client__title">
+                                Client
+                                <a href="#" class="client__text">
+                                    Review
+                                </a>
+                            </h2>
+                            <img src="./assets/img/client/david-icon.png" alt="" class="client__img">
+                            <p class="client__name">
+                                David Luice
+                            </p>
+                            <p class="client__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat,
+                                lacinia sagittis.
+                                Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan
+                                lacus,
+                                non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client__box">
+                            <h2 class="client__title">
+                                Client
+                                <a href="#" class="client__text">
+                                    Review
+                                </a>
+                            </h2>
+                            <img src="./assets/img/client/david-icon.png" alt="" class="client__img">
+                            <p class="client__name">
+                                David Luice
+                            </p>
+                            <p class="client__description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget lectus pulvinar venenatis volutpat,
+                                lacinia sagittis.
+                                Vulputate habitasse vel nisl, id consequat lacus. Et porttitor vestibulum, blandit quam id. Accumsan
+                                lacus,
+                                non tincidunt sed pellentesque facilisi ornare pellentesque ullamcorpe
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -331,47 +408,125 @@
                         offer
                     </a>
                 </h3>
-                <div class="offer__box">
-                    <div class="offer__artemis">
-                        <p class="offer__name">
-                            pope valley winery
-                        </p>
-                        <p class="offer__price">
-                            $150.00
-                        </p>
-                    </div>
-                    <div class="offer__pope">
-                        <p class="offer__name">
-                            pope valley winery
-                        </p>
-                        <p class="offer__price">
-                            $140.00
-                        </p>
-                    </div>
-                    <div class="offer__valley">
-                        <p class="offer__name">
-                            pope valley winery
-                        </p>
-                        <p class="offer__price">
-                            $158.00
-                        </p>
-                    </div>
-                </div>
-
-                <div
-                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet"
-                        tabindex="0" role="button" aria-label="Go to slide 2"></span><span
-                        class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                </div>
                 <div class="swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                        <div class="offer__box">
+                        <div class="offer__artemis">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $150.00
+                            </p>
+                        </div>
+                        <div class="offer__pope">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $140.00
+                            </p>
+                        </div>
+                        <div class="offer__valley">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $158.00
+                            </p>
+                        </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="offer__box">
+                        <div class="offer__artemis">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $150.00
+                            </p>
+                        </div>
+                        <div class="offer__pope">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $140.00
+                            </p>
+                        </div>
+                        <div class="offer__valley">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $158.00
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="offer__box">
+                        <div class="offer__artemis">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $150.00
+                            </p>
+                        </div>
+                        <div class="offer__pope">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $140.00
+                            </p>
+                        </div>
+                        <div class="offer__valley">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $158.00
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="offer__box">
+                        <div class="offer__artemis">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $150.00
+                            </p>
+                        </div>
+                        <div class="offer__pope">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $140.00
+                            </p>
+                        </div>
+                        <div class="offer__valley">
+                            <p class="offer__name">
+                                pope valley winery
+                            </p>
+                            <p class="offer__price">
+                                $158.00
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <section class="featured">
@@ -383,25 +538,75 @@
                         Events
                     </a>
                 </h3>
-                <div class="featured__box">
-                    <img src="./assets/img/featured/featured-icon.png" alt="" class="featured__img">
-                    <div class="feature__info">
-                        <p class="featured__suptitle">
-                            10th Annual Barrel Tasting
-                        </p>
-                        <p class="featured__date">15 Sept</p>
-                        <p class="featured__description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Maecenas nunc a in morbi. Ac, aenean iaculis
-                            purus turpis est sollicitudin blandit ut leo.
-                        </p>
-                        <a href="#" class="featured__link">
-                            read more
-                        </a>
+                <div class="featured__case">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="featured__box">
+                            <img src="./assets/img/featured/featured-icon.png" alt="" class="featured__img">
+                            <div class="feature__info">
+                                <p class="featured__suptitle">
+                                    10th Annual Barrel Tasting
+                                </p>
+                                <p class="featured__date">15 Sept</p>
+                                <p class="featured__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Maecenas nunc a in morbi. Ac, aenean iaculis
+                                    purus turpis est sollicitudin blandit ut leo.
+                                </p>
+                                <a href="#" class="featured__link">
+                                    read more
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                      <div class="swiper-slide">
+                        <div class="featured__box">
+                            <img src="./assets/img/featured/featured-icon.png" alt="" class="featured__img">
+                            <div class="feature__info">
+                                <p class="featured__suptitle">
+                                    10th Annual Barrel Tasting
+                                </p>
+                                <p class="featured__date">15 Sept</p>
+                                <p class="featured__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Maecenas nunc a in morbi. Ac, aenean iaculis
+                                    purus turpis est sollicitudin blandit ut leo.
+                                </p>
+                                <a href="#" class="featured__link">
+                                    read more
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="featured__box">
+                            <img src="./assets/img/featured/featured-icon.png" alt="" class="featured__img">
+                            <div class="feature__info">
+                                <p class="featured__suptitle">
+                                    10th Annual Barrel Tasting
+                                </p>
+                                <p class="featured__date">15 Sept</p>
+                                <p class="featured__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Maecenas nunc a in morbi. Ac, aenean iaculis
+                                    purus turpis est sollicitudin blandit ut leo.
+                                </p>
+                                <a href="#" class="featured__link">
+                                    read more
+                                </a>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    
+                    <div class="swiper-scrollbar"></div>
                 </div>
+                </div> 
             </div>
-        </div>
         </div>
     </section>
 
@@ -409,62 +614,91 @@
         <div class="container">
             <div class="contact__content">
                 <h4 class="contact__title">
-                    Contact
-                    <p class="contact__text">
+                    Contact 
+                   <a href="#" class="contact__text">
                         us
-                    </p>
+                   </a>
                 </h4>
                 <div class="contact__box">
-                    <p class="contact__description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin
-                        blandit ut leo.Lorem ipsum dolor sit amet, consectetur
-                    </p>
-                    <ul class="contact__list">
-                        <a href="#" class="contact__link">
+                    <div class="contact__case">
+                        <p class="contact__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Maecenas nunc a in morbi. Ac, aenean iaculis purus turpis est sollicitudin
+                            blandit ut leo.Lorem ipsum dolor sit amet, consectetur
+                        </p>
+                        <ul class="contact__list">
                             <li class="contact__item">
-                        </a>
-                        <img src="./assets/img/contact/call-big.svg" alt="phone" class="contact__icon">
-                        <a href="#" class="contact__link">
-                            +012-3254-6987
-                        </a>
-                        </li>
-                        <li class="contact__item">
-                            <img src="./assets/img/contact/message-big.svg" alt="message" class="contact__icon">
-                            <a href="#" class="contact__link">
-                                Food&drink@gmail.com
-                            </a>
-                        </li>
-                        <li class="contact__item">
-                            <img src="./assets/img/contact/location-big.svg" alt="location" class="contact__icon">
-                            <a href="#" class="contact__link">
-                                Brahmanbaira, Dhaka, Bangladesh
-                            </a>
-                        </li>
-                        <li class="contact__item">
-                            <a href="#" class="contact__link">
-                                <img src="./assets/img/contact/google-big.svg" alt="google" class="contact__img">
-                                <img src="./assets/img/contact/twitter-big.svg" alt="twitter" class="contact__img">
-                                <img src="./assets/img/contact/linkedin-big.svg" alt="linkedin" class="contact__img">
-                                <img src="./assets/img/contact/facebook-big.svg" alt="facebook" class="contact__img">
-                            </a>
-                        </li>
-                    </ul>
+                                <img src="./assets/img/contact/call-big.svg" alt="phone" class="contact__icon">
+                                <a href="#" class="contact__link">
+                                    +012-3254-6987
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <img src="./assets/img/contact/message-big.svg" alt="message" class="contact__icon">
+                                <a href="#" class="contact__link">
+                                    Food&drink@gmail.com
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <img src="./assets/img/contact/location-big.svg" alt="location" class="contact__icon">
+                                <a href="#" class="contact__link">
+                                    Brahmanbaira, Dhaka, Bangladesh
+                                </a>
+                            </li>
+                            <li class="contact__item">
+                                <a href="#" class="contact__link">
+                                    <img src="./assets/img/contact/google-big.svg" alt="google" class="contact__img">
+                                    <img src="./assets/img/contact/twitter-big.svg" alt="twitter" class="contact__img">
+                                    <img src="./assets/img/contact/linkedin-big.svg" alt="linkedin" class="contact__img">
+                                    <img src="./assets/img/contact/facebook-big.svg" alt="facebook" class="contact__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact__input">
+                        <div class="contact__sector">
+                            <p class="contact__name">Name</p>
+                            <input type="text" class="contact__email">
+                        </div>
+                        <div class="contact__sector">
+                            <p class="contact__name">Email</p>
+                            <input type="text" class="contact__email">
+                        </div>
+                        <div class="contact__sector">
+                            <p class="contact__name">Phone</p>
+                            <input type="number" class="contact__email">
+                        </div>
+                        <div class="contact__sector">
+                            <p class="contact__name">Message</p>
+                            <input type="text" class="contact__message">
+                        </div>
+                        <button class="contact__btn">
+                            Send
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </div>
     </sectiion>
 
-
-    <input id="firstname" class="input" type="text" placeholder="hiivl">
-    <div class="cut"></div>
-
-    <label for="search" class="contact__label">
-        <input placeholder="Name" id="name" type="text" class="contact__name--input">
-        <input placeholder="Email" id="search" type="text" class="contact__name--input">
-        <input placeholder="Phone" id="search" type="text" class="contact__name--input">
-    </label>
+    <section class="sletter">
+        <div class="container">
+            <div class="sletter__content">
+                <h4 class="sletter__title">
+                    newsletter
+                </h4>
+                <p class="sletter__suptitle">
+                    Sign Up to our newsletter and Save 40% on next Purchase
+                </p>
+                <div class="sletter__box">
+                    <input placeholder="Email" type="text" class="sletter__email">
+                    <button class="sletter__btn">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -606,7 +840,10 @@
         </div>
     </footer>
 
-    <script src="./js/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/client.js"></script>
+    <script src="./js/offer.js"></script>
+    <script src="./js/featured.js"></script>
 
 </body>
 
